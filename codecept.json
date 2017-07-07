@@ -1,0 +1,22 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "SeleniumWebdriver": {
+      "url": "http://test.musify.selectotech.com/",
+      "browser": "chrome"
+    }
+  },
+  "bootstrap": false,
+  "include": {
+    "I": "./steps_file.js",
+    "loginPage": "./pages/login.js"
+  },
+  "mocha": {
+    "reporterOptions": {
+      "mochaFile": "output"
+    }
+  },
+    "name": "imusify"
+}
